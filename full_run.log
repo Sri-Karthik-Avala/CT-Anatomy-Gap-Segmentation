@@ -1,0 +1,31 @@
+START Tue Jun 16 16:40:51 IST 2026
+[setup] device=cuda root=. archs=['tu-tf_efficientnet_b0.ns_jft_in1k'] folds=5 epochs=60
+[data] train=624 test=240 volumes=26
+[data] class weights = [0.30000001192092896, 0.41999998688697815, 0.8500000238418579, 0.6899999976158142, 1.8700000047683716, 0.7300000190734863, 3.059999942779541, 0.75, 0.5099999904632568]
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold0] training on 480 imgs...
+Unexpected keys (bn2.bias, bn2.num_batches_tracked, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+  [model] tu-tf_efficientnet_b0.ns_jft_in1k (pretrained)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold0] best val final = 0.4424  (239s)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold1] training on 504 imgs...
+Unexpected keys (bn2.bias, bn2.num_batches_tracked, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+  [model] tu-tf_efficientnet_b0.ns_jft_in1k (pretrained)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold1] best val final = 0.4459  (283s)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold2] training on 504 imgs...
+Unexpected keys (bn2.bias, bn2.num_batches_tracked, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+  [model] tu-tf_efficientnet_b0.ns_jft_in1k (pretrained)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold2] best val final = 0.4467  (307s)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold3] training on 504 imgs...
+Unexpected keys (bn2.bias, bn2.num_batches_tracked, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+  [model] tu-tf_efficientnet_b0.ns_jft_in1k (pretrained)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold3] best val final = 0.4648  (348s)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold4] training on 504 imgs...
+Unexpected keys (bn2.bias, bn2.num_batches_tracked, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+  [model] tu-tf_efficientnet_b0.ns_jft_in1k (pretrained)
+  [tu-tf_efficientnet_b0.ns_jft_in1k fold4] best val final = 0.4625  (346s)
+  [tune] base OOF final = 0.4652
+  [tune] bias = [-0.5, 0.0, -0.5, 0.0, -0.25, -0.25, -0.5, -0.5]  min_cc = 0
+  [tune] tuned OOF final = 0.4692 (was 0.4652)
+[OOF] final=0.4692  quality=0.6850  mean_class_dice=0.8021  mean_case_class_dice=0.6616  boundary_f1=0.3868  area_score=0.9648
+[done] wrote working\submission.csv with 240 rows in 1818s
+[check] submission OK
+END Tue Jun 16 17:11:21 IST 2026 exit=0

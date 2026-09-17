@@ -1,0 +1,7 @@
+=== RUN A: baseline anchor (plain UNet, no EMA/Lov/bnd) Wed Jun 17 02:23:11 IST 2026 ===
+[OOF] final=0.5375  quality=0.7331  mean_class_dice=0.8261  mean_case_class_dice=0.7219  boundary_f1=0.4820  area_score=0.9679
+A done Wed Jun 17 02:37:03 IST 2026, cooling 90s...
+=== RUN B: upgrades, EMA OFF (ResSE+Lov+bnd) Wed Jun 17 02:38:33 IST 2026 ===
+[OOF] final=0.5221  quality=0.7225  mean_class_dice=0.8107  mean_case_class_dice=0.7133  boundary_f1=0.4770  area_score=0.9670
+B done Wed Jun 17 02:53:44 IST 2026
+ALL DIAG DONE Wed Jun 17 02:53:44 IST 2026

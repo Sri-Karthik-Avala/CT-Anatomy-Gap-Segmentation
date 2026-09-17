@@ -1,0 +1,24 @@
+[setup] device=cuda root=. folds=5 epochs=70 base=32 repeat=1 ema=0.99
+[data] train=624 test=240 volumes=26
+[data] mean=[0.20200000703334808, 0.20100000500679016, 0.02500000037252903] std=[0.23399999737739563, 0.2329999953508377, 0.050999999046325684]
+[data] class weights = [0.30000001192092896, 0.41999998688697815, 0.8500000238418579, 0.6899999976158142, 1.8700000047683716, 0.7300000190734863, 3.059999942779541, 0.75, 0.5099999904632568]
+  [rep0 fold0] training on 480 imgs...
+  [rep0 fold0] best val final = 0.5068  (136s)
+  [save] provisional submission after 1 models
+  [rep0 fold1] training on 504 imgs...
+  [rep0 fold1] best val final = 0.4909  (136s)
+  [save] provisional submission after 2 models
+  [rep0 fold2] training on 504 imgs...
+  [rep0 fold2] best val final = 0.5363  (138s)
+  [save] provisional submission after 3 models
+  [rep0 fold3] training on 504 imgs...
+  [rep0 fold3] best val final = 0.5185  (141s)
+  [save] provisional submission after 4 models
+  [rep0 fold4] training on 504 imgs...
+  [rep0 fold4] best val final = 0.5024  (138s)
+  [save] provisional submission after 5 models
+  [tune] bias = [-0.25, 0.0, 0.0, -0.5, -0.25, 0.75, -0.5, -0.5]
+  [tune] OOF final 0.5194 -> 0.5221
+[OOF] final=0.5221  quality=0.7225  mean_class_dice=0.8107  mean_case_class_dice=0.7133  boundary_f1=0.4770  area_score=0.9670
+[done] wrote submission with 240 rows in 907s
+[check] submission OK

@@ -1,0 +1,9 @@
+class_id,class_name
+1,lung_airway
+2,cardiomediastinal
+3,hepatosplenic
+4,renal_adrenal
+5,bowel_pancreas
+6,pelvic_urinary
+7,axial_bone
+8,appendicular_muscle
